@@ -1,115 +1,164 @@
-print('Addition: ', 1 + 2)
-print('Subtraction: ', 2 - 1)
-print('Multiplication: ', 2 * 3)
-print ('Division: ', 4 / 2)
-print('Division: ', 6 / 2)
-print('Division: ', 7 / 2)
-print('Division without the remainder: ', 7 // 2)
-print('Modulus: ', 3 % 2)
-print ('Division without the remainder: ', 7 // 3)
-print('Exponential: ', 3 ** 2)                    
+#Excersise 1-3
+Age= 19
+Height= 1.75
+Complex= 1 + 3j
 
-print('Floating Number,PI', 3.14)
-print('Floating Number, gravity', 9.81)
+#Excersise 4
 
-print('Complex number: ', 1 + 1j)
-print('Multiplying complex number: ',(1 + 1j) * (1-1j))
+Base = int(input('Base: '))
+height = int(input('height: '))
+Area = int(0.5 * Base * height)
+print('Area of a triangle:', Area)
 
-a = 3 
-b = 2 
+#Excersise 5
 
-total = a + b
-diff = a - b
-product = a * b
-division = a / b
-remainder = a % b
-floor_division = a // b
-exponential = a ** b
+side_a= int(input('side: '))
+side_b= int(input('side: '))
+side_c= int(input('side: '))
+Perimeter = int(side_a + side_b + side_c)
+print('Perimeter of a triangle:', Perimeter)
 
+#Excersise 6
 
-print(total) 
-print('a + b = ', total)
-print('a - b = ', diff)
-print('a * b = ', product)
-print('a / b = ', division)
-print('a % b = ', remainder)
-print('a // b = ', floor_division)
-print('a ** b = ', exponential)
+Lenght= int(input('Lenght: '))
+Width= int(input('Width: '))
+Area= int(Lenght * Width)
+Perimeter= int(2 * (Lenght + Width))
+print('Area of a rectangle:', Area)
+print('Perimeter of a rectangle:', Perimeter)
 
+#Excersise 7
 
-num_one = 3
-num_two = 4
+Radius= int(input('Radius: '))
+Area= int(3.14 * Radius ** 2)
+Perimeter= int(2 * 3.14 * Radius)
+print('Area of a circle:', Area)
+print('Perimeter of a circle:', Perimeter)
 
+#Excersise 8
 
-total = num_one + num_two
-diff = num_two - num_one
-product = num_one * num_two
-div = num_two / num_two
-remainder = num_two % num_one
+x1 = int(input('x1: '))
+y1 = int(input('y1: '))
+x2 = int(input('x2: '))
+y2 = int(input('y2: '))
+slope= int(y2-y1) / int(x2-x1)
+print('slope:', slope)
 
+#Excersise 9
 
-print('total: ', total)
-print('difference: ', diff)
-print('product: ', product)
-print('division: ', div)
-print('remainder: ', remainder)
+Y1= int(input('y1: '))
+Y2= int(input('y2: '))
+X1= int(input('x1: '))
+X2= int(input('x2: '))
+Slope= int((Y2 - Y1) / int(X2 - X1))
+print('slope:', Slope)
 
+#Excersise 9
 
-radius = 10                                 
-area_of_circle = 3.14 * radius ** 2         
-print('Area of a circle:', area_of_circle)
+x1= int(X1)
+y1= int(Y1)
+x2= int(X2)
+y2= int(Y2)
+distance= int((X2 - X1) * 2 + (Y2 - Y1) * 2)
+print('distance:', distance)
 
+#Excersise 10
+#Boolean
+#True, False
 
-length = 10
-width = 20
-area_of_rectangle = length * width
-print('Area of rectangle:', area_of_rectangle)
+print(Slope >= slope)
+print(Slope <= slope)
+print(Slope == slope)
+print(Slope != slope)
+print(Slope > slope)
+print(Slope < slope)
 
+#Excersise 11
 
-mass = 75
-gravity = 9.81
-weight = mass * gravity
-print(weight, 'N')
+x= int(input('x: '))
+X= int(input('X: '))
+y= int(x**2 + 6*X + 9)
+print('y:', y)
 
-print(3 > 2)     
-print(3 >= 2)    
-print(3 < 2)    
-print(2 < 3)     
-print(2 <= 3)    
-print(3 == 2)   
-print(3 != 2)   
-print(len('mango') == len('avocado'))  
-print(len('mango') != len('avocado'))  
-print(len('mango') < len('avocado'))   
-print(len('milk') != len('meat'))      
-print(len('milk') == len('meat'))      
-print(len('tomato') == len('potato'))  
-print(len('python') > len('dragon'))   
+#Excersise 12
 
+print(len('python') == len('dragon'))
+print(len('python') != len('dragon'))
+print(len('python') < len('dragon'))
+print(len('python') > len('dragon'))
+print(len('python') >= len('dragon'))
+print(len('python') <= len('dragon'))
 
-print('True == True: ', True == True)
-print('True == False: ', True == False)
-print('False == False:', False == False)
-print('True and True: ', True and True)
-print('True or False:', True or False)
+#Excersise 13
+#boolean
+#True, False
 
+python = 'python'
+dragon = 'dragon'
+print("on" in python and "on" in dragon)
 
-print('1 is 1', 1 is 1)                 
-print('1 is not 2', 1 is not 2)         
-print('A in Asabeneh', 'A' in 'Asabeneh') 
-print('B in Asabeneh', 'B' in 'Asabeneh') 
-print('coding' in 'coding for all')
-print('a in an:', 'a' in 'an')      
-print('4 is 2 ** 2:', 4 is 2 ** 2)  
+#Excersise 14
+Frase= 'I hope this course is not full of jargon'
+print(Frase)
+print("jargon" in Frase)
 
-print(3 > 2 and 4 > 3) 
-print(3 > 2 and 4 < 3) 
-print(3 < 2 and 4 < 3) 
-print(3 > 2 or 4 > 3)  
-print(3 > 2 or 4 < 3)  
-print(3 < 2 or 4 < 3)  
-print(not 3 > 2)    
-print(not True)     
-print(not False)    
-print(not not True) 
-print(not not False)
+#Excersise 15
+
+print("no" in python and "no" in dragon)
+
+#Excersise 16
+
+len('python')
+print(float(len('python')))
+print(str(len('python')))
+
+#Excersise 17
+#Boolean
+
+Valor_1 = (input('Enter a number: ')) 
+Remainder = float(Valor_1) % 2
+if Remainder == 0:
+    print('el valor es par:', Remainder)
+else:
+    print('el valor es impar:', Remainder)
+
+#Excersise 18
+#Boolean
+
+Valor1 = (7)
+Divisor = float(Valor1) / 3
+if Divisor == int(2.7):
+    print('True')
+else:
+    print('False')
+
+#Excersise 19
+
+if type(10) == '10':
+    print('True')
+else:
+    print('False')
+
+#Excersise 20
+
+if int('9.8') == 10:
+    print('True')
+else:
+    print('False')
+
+#Excersise 21
+
+Horaschambeadas= int(input('Horas chambeadas: '))
+Pago= int(input('Pago por hora: '))
+Salario= int(Horaschambeadas * Pago)
+print('Salario:', Salario)
+
+#Excersise 22
+Years= int(input('Enter a number: '))
+Valor_1= str(Years*365*24*60*60)
+print('los segundos que has vivido son: ', Valor_1)
+
+#Excersise 23
+
+for i in range(1, 6):
+   print (i, 1, i*2, i*3)

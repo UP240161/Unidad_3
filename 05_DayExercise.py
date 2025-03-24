@@ -164,7 +164,7 @@ print("Edad promedio:", average_age)
 print("Rango de edades:", age_range)
 print("Diferencia (min - promedio):", min_avg_diff)
 print("Diferencia (max - promedio):", max_avg_diff)
-
+#waza
 countries = [
   'Afghanistan',
   'Albania',

@@ -1,6 +1,30 @@
-import sys
-sys.path.append(r'c:\Users\ESTUDIANTE\Downloads\Unidad_3')  # Adjust the path to where day_exercise.py is located
-from _DayExercises import 
+countries_data = {
+    "country_list": [
+        {
+            "name": "United States",
+            "languages": ["English"],
+            "population": 331002651,
+        },
+        {
+            "name": "India",
+            "languages": ["Hindi", "English"],
+            "population": 1380004385,
+        },
+        {
+            "name": "China",
+            "languages": ["Mandarin"],
+            "population": 1439323776,
+        }
+    ]
+}
+from Day5Exercise import countries
+
+
+# Ahora puedes usar la lista de países
+for country in countries:
+    if "land" in country:
+        print(country)
+
 
 # Ahora puedes usar la lista de países
 for country in countries:
@@ -72,26 +96,30 @@ for i in range(0, 101):
 print("The sum of all even numbers is", even_sum)
 print("The sum of all odd numbers is", odd_sum)
 #Level 3
-#Exercise 1
-list_c = countries["country_list"]
+# Exercise 1
+list_c = countries
 for country in list_c:
     if "land" in country:
         print(country)
 
-#Exercise 2
+# Exercise 2
 fruity_list = ['banana', 'orange', 'mango', 'lemon']
 rev = []
-for i in range(3, -1, -1):
+for i in range(len(fruity_list) - 1, -1, -1):
     rev.append(fruity_list[i])
 print(rev)
 
-#Exercise 3
-# noinspection DuplicatedCode
-list_data = countries_data.data
+# Exercise 3
+list_data = countries_data["country_list"]
+for i in list_data:
+    if i["name"] == "United States":
+        print(i["languages"])
+
 total_languages_initial = []
 for i in list_data:
     total_languages_initial.extend(i["languages"])
 print("Languages = ", len(set(total_languages_initial)))
+
 counts = {}
 for i in total_languages_initial:
     counts[i] = counts.get(i, 0) + 1
@@ -104,6 +132,7 @@ def sort_dict_by_value(d, reverse=False):
 counts = sort_dict_by_value(counts, True)
 for i in list(counts.items())[:10]:
     print(i)
+
 populations = {}
 for i in list_data:
     populations[i["name"]] = i["population"]

@@ -15,20 +15,28 @@ student_dictionary = {
     "address": "Calle Carlos M. Bustamante, Colonia Morelos II, Numero 326",
 }
 #Exercise 4
+
 print(len(student_dictionary))
 #Exercise 5
+
 print(student_dictionary["skills"])
 print("Valor de skills:", student_dictionary["skills"])
 print(type(student_dictionary["skills"]))
 #Exercise 6
+
 student_dictionary["skills"].append("Sleeping")
 #Exercise 7
+
 list_keys = list(student_dictionary.keys())
 #Exercise 8
+
 list_values = list(student_dictionary.values())
 #Exercise 9
+
 list_of_tuples = [(k, v) for k, v in student_dictionary.items()]
 #Exercise 10
+
 student_dictionary.pop("marital_status")
 #Exercise 11
+
 del dog

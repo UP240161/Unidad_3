@@ -17,10 +17,10 @@ countries_data = {
         }
     ]
 }
+
 from Day5Exercise import countries
 
 
-# Ahora puedes usar la lista de países
 for country in countries:
     if "land" in country:
         print(country)
